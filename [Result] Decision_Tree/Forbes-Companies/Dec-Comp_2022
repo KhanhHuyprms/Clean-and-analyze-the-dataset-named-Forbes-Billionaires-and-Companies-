@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Assets &le; 232.15<br/>gini = 0.174<br/>samples = 1600<br/>value = [1450, 9, 6, 27, 6, 102]<br/>class = 0>, fillcolor="#e88e4d"] ;
+1 [label=<Sales &le; 277.28<br/>gini = 0.003<br/>samples = 1452<br/>value = [1450, 0, 1, 0, 0, 1]<br/>class = 0>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Market Value &le; 769.295<br/>gini = 0.001<br/>samples = 1451<br/>value = [1450, 0, 1, 0, 0, 0]<br/>class = 0>, fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 1450<br/>value = [1450, 0, 0, 0, 0, 0]<br/>class = 0>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1, 0, 0, 0]<br/>class = 2>, fillcolor="#39e581"] ;
+2 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 0, 0, 1]<br/>class = 5>, fillcolor="#e5399d"] ;
+1 -> 5 ;
+6 [label=<Assets &le; 882.95<br/>gini = 0.495<br/>samples = 148<br/>value = [0, 9, 5, 27, 6, 101]<br/>class = 5>, fillcolor="#ef86c3"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<Market Value &le; 950.02<br/>gini = 0.09<br/>samples = 106<br/>value = [0, 0, 5, 0, 0, 101]<br/>class = 5>, fillcolor="#e643a2"] ;
+6 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 101<br/>value = [0, 0, 0, 0, 0, 101]<br/>class = 5>, fillcolor="#e5399d"] ;
+7 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 5<br/>value = [0, 0, 5, 0, 0, 0]<br/>class = 2>, fillcolor="#39e581"] ;
+7 -> 9 ;
+10 [label=<Assets &le; 2067.1<br/>gini = 0.52<br/>samples = 42<br/>value = [0, 9, 0, 27, 6, 0]<br/>class = 3>, fillcolor="#93caf1"] ;
+6 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 27<br/>value = [0, 0, 0, 27, 0, 0]<br/>class = 3>, fillcolor="#399de5"] ;
+10 -> 11 ;
+12 [label=<Assets &le; 3596.455<br/>gini = 0.48<br/>samples = 15<br/>value = [0, 9, 0, 0, 6, 0]<br/>class = 1>, fillcolor="#def6bd"] ;
+10 -> 12 ;
+13 [label=<gini = 0.0<br/>samples = 9<br/>value = [0, 9, 0, 0, 0, 0]<br/>class = 1>, fillcolor="#9de539"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 6<br/>value = [0, 0, 0, 0, 6, 0]<br/>class = 4>, fillcolor="#8139e5"] ;
+12 -> 14 ;
+}
